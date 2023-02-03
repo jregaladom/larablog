@@ -28,6 +28,6 @@ class Post extends Model
 
     public function getGetExcerptAttribute()
     {
-        return substr($this->content, 0, 140);
+        return substr($this->body, 0, 140);
     }
 }
