@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
 
             $table->string('title');
             $table->string('slug')->unique();
-            $table->string('image')->unique();
+            $table->text('image')->nullable();
             $table->text('body');
             $table->text('iframe')->nullable();
             $table->timestamps();
